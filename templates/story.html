@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% block title %} Madlibs game {% endblock %}
+
+{% block body %}
+<a class="linkButton" href="/">New story >>></a>
+<div>
+  <h1>The story is:</h1>
+  <p>
+    <span style="font-size: 20px;"> {{ the_story }}</span> 
+  </p>
+</div>
+{% endblock %}

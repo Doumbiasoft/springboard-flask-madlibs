@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% block title %} Madlibs game {% endblock %}
+
+{% block body %}
+
+<div>
+  <form action="/story">
+    {% for param in story_params %}
+    <label for="{{ param }}">{{ param }}</label>
+    <input type="text" id="{{ param }}" name="{{ param }}" placeholder="{{ param }}.." required>
+    {% endfor %}
+    <input type="submit" value="Submit">
+  </form>
+</div>
+{% endblock %}
